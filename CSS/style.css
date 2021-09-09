@@ -1,0 +1,158 @@
+/*
+1.Posicionamiento 
+2.Modelo de caja(Ej: Medidas del box model, Margin, Padding, Etc.)
+3.Tipografia
+4.Visuales
+5.Otros
+*/
+@media screen and (min-width: 320px) {
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 62.5%;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    background-color: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #bdbdbd;
+  }
+
+  .header{
+    margin-top: 25px;
+  }
+
+  .header-title {
+    padding: 10px;
+    margin-bottom: 25px;
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-size: 3.6rem;
+  }
+  .header-description {
+    padding: 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.8rem;
+  }
+
+  .description-title {
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+
+  .description-paragraph {
+    margin-bottom: 50px;
+    width: 85%;
+    font-weight: 400;
+  }
+
+  .presentation {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    margin: auto;
+    width: 95%;
+  }
+
+  .presentation-container:nth-child(2) {
+    position: relative;
+    top: 100px;
+  }
+
+  .presentation-container:nth-child(4) {
+    position: relative;
+    top: 100px;
+  }
+
+  .presentation-container:nth-child(6) {
+    position: relative;
+    top: 60px;
+  }
+
+  .container__img {
+    width: 80%;
+  }
+  .container__title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 1.8rem;
+  }
+
+  .container__job {
+    position: relative;
+    bottom: 65%;
+    left: 82%;
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    writing-mode: vertical-rl;
+  }
+
+  .footer {
+    margin-top: 100px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .footer-text {
+    font-size: 1.4rem;
+    color: #bdbdbd;
+  }
+
+  footer span {
+    font-size: 1.4rem;
+    color: #bdbdbd;
+  }
+
+  .footer-link {
+    font-size: 1.4rem;
+    color: #bdbdbd;
+  }
+
+  .footer-link:nth-child(2) {
+    text-decoration: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main {
+    margin: auto;
+    width: 80%;
+  }
+
+  .header{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header-description {
+      width: 40%;
+  }
+  .presentation {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+
+  .presentation-container:nth-child(2) {
+    position: relative;
+    top: 100px;
+  }
+
+  .presentation-container:nth-child(4) {
+    position: initial;
+  }
+
+  .presentation-container:nth-child(5) {
+    position: relative;
+    top: 100px;
+  }
+
+  .presentation-container:nth-child(6) {
+    position: initial;
+  }
+}
