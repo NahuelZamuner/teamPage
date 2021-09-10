@@ -26,4 +26,5 @@ Presentation page of members of a work team. It contains a brief description, ca
 - nahuelzamuner010@gmail.com
 
 <h2>Thanks</h2>
+Thanks to the dev Challenge community for the UI layout provided for the project. They are very useful to put our knowledge into practice.
 
